@@ -3,13 +3,18 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home';
 import Login from './components/Login';
+import {Route,Routes} from 'react-router-dom'
 
 
 
 function App() {
   return (
     <div>
-        <Login/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/Login' element={<Login />}/>
+      </Routes>
+        <Home/>
     </div>
   );
 }
