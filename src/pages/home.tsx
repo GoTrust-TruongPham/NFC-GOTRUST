@@ -1,35 +1,60 @@
 import React from 'react'
 
-export default function Home() {
-    return (
-        <div className='h-screen'>
-            <div className='w-full h-full flex flex-col items-center justify-start shadow-xl  bg-[#ffffff] min-h-screen'>
-                <div className='min-w-[376px] w-full h-full md:max-w-[376px] flex flex-col items-center rounded-xl bg-gradient-to-r from-[#CCBF6C] via-[#8F9F59] to-[#0F5B33] min-h-screen'>
-                    {/* <div className=' w-[376px] h-[75px]'> */}
-                    <div className='absolute flex flex-row justify-end w-[376px] h-[75px] rounded-2xl drop-shadow-lg bg-gradient-to-r from-[#CCBF6C] via-[#8F9F59] to-[#0F5B33] text-white '>
-                        <button className='flex items-center pr-6'>
-                            <img src="/image/login.svg" alt="login" />
-                            <p className='pl-2 font-normal text-[16px]'>Đăng nhập</p>
-                        </button>
-                    </div>
-                    {/* </div> */}
-                </div>
-                <div className='absolute w-[116px] h-[116px] flex'>
-                    <button className='absolute flex justify-between mt-40'>
-                        <img src="/image/avatar.png" alt="camera" />
-                        <button className='absolute w-[35.62px] h-[35.62px] top-[77.34px] left-[85px]'>
-                            <img src="/image/Camera.svg" alt="camera" />
-                        </button>
-                    </button>
-                </div>
-                <div className='absolute flex flex-col pt-[300px] text-white'>
-                    <p className='font-bold text-2xl capitalize text-center'>nguyen hai linh</p>
-                    <p className='font-normal text-center text-base uppercase '>cto |
-                    <span className='font-medium uppercase text-base ml-1'>gotrust</span></p>
-                </div>
-
-            </div>
-
+export default function Login() {
+  return (
+    <div className='h-screen'>
+      <div className='w-full h-full  flex flex-col items-center justify-start shadow-xl  bg-[#ffffff] min-h-screen'>
+        <div className='fixed min-w-[377px] w-full h-full   md:max-w-[376px] min-h-screen'>
+          <img src="/image/bg_nfc_1x.JPG" alt="background" />
         </div>
-    )
+        <div className='flex flex-row justify-end w-[374px] h-[75px] rounded-b-2xl border drop-shadow-lg  opacity-[44%] backdrop-blur-3xl '>
+        </div>
+        <div className='absolute items-center pl-60 pt-6'>
+          <button className='flex'>
+            <img src="/image/login.svg" className='pr-2' alt="login" />
+            <p className='font-light text-white '>Đăng nhập</p>
+          </button>
+        </div>
+        <div className='absolute w-[116px] h-[116px] mt-32 flex'>
+          <button className='absolute flex justify-between'>
+            <img src="/image/avatar.png" alt="camera" />
+            <button className='absolute w-[35.62px] h-[35.62px] top-[77.34px] left-[85px]'>
+              <img src="/image/Camera.svg" alt="camera" />
+            </button>
+          </button>
+        </div>
+        <div className='absolute flex flex-col mt-64 text-white'>
+          <p className='font-bold text-2xl capitalize text-center'>nguyen hai linh</p>
+          <p className='font-light text-center text-base uppercase '>cto |
+            <span className='font-medium uppercase text-base ml-1'>gotrust</span></p>
+        </div>
+
+        <div className='absolute mt-[360px]'>
+          <div className=' grid-flow-row grid-rows-5 gap-1'>
+            <button>
+              <img src="/image/Linkedin.svg" alt="linkedin" />
+            </button>
+            <button>
+              <img src="/image/Facebook.svg" alt="facebook" />
+            </button>
+            <button>
+              <img src="/image/Telegram.svg" alt="telegram" />
+            </button>
+            <button>
+              <img src="/image/Twitter.svg" alt="twitter" />
+            </button>
+            <button>
+              <img src="/image/Medium.svg" alt="medium" />
+            </button>
+          </div>
+          <div className='flex flex-col items-center text-white'>
+            <p className='font-medium text-xl text-center'>linh.nguyen@gotrust.vn</p>
+            <p className='font-extralight text-center text-lg  '>0977721242</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  )
 }
